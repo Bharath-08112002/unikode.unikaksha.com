@@ -47,3 +47,4 @@ else:
     d=(150*b)/100+e
 print("The fees to be paid by the student is RS.","%.2f"%d)
     
+    
