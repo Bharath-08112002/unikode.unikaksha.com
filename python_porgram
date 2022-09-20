@@ -1,0 +1,49 @@
+# greatest of two numbers
+
+a=int(input())
+b=int(input())
+if (a==b):
+  print("10 is equal to 10")
+elif (a>b):
+  print("20 is greater than 10")
+else:
+  print("20 is less than 30")
+  
+#grading system
+
+a=int(input())
+if a==100:
+    print("s")
+elif a>=91 and a<=99:    
+    print("A")
+elif a>=81 and a<=90:    
+    print("B")
+elif a>=71 and a<=80:    
+    print("C")
+elif a>=61 and a<=70:
+    print("D")
+elif a>=51 and a<=60:
+    print("E")
+elif a<50:
+    print("F")
+else:
+    print("Invalid Input")
+    
+    #fee collection
+    
+    a=input("Enter the student type\n")
+b=float(input("Enter tuition fee\n"))
+if a=='MSDS':
+    c=float(input("Enter bus fee\n"))
+    d=b+c
+elif a=='MSH':
+    e=float(input("Enter hostel fee\n"))
+    d=b+e
+elif a=='MGSDS':
+    c=float(input("Enter bus fee\n"))
+    d=(150*b)/100+c
+else: 
+    e=float(input("Enter hostel fee\n"))
+    d=(150*b)/100+e
+print("The fees to be paid by the student is RS.","%.2f"%d)
+    
